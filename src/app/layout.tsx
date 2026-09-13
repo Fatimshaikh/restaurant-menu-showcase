@@ -24,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body bg-bg text-text-main">
+      <body className="min-h-full flex flex-col font-body bg-bg text-text-main" suppressHydrationWarning>
         <CustomCursor />
         {children}
       </body>
