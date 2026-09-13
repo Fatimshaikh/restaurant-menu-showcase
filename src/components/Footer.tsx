@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -12,7 +13,10 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="font-display text-2xl text-text-main">Ember & Oak</h3>
+          <h3 className="font-display text-2xl text-text-main">
+            Ember & Oak
+          </h3>
+
           <p className="text-text-muted text-sm mt-2">
             123 Fireside Lane, Karachi, Sindh
           </p>
@@ -27,7 +31,6 @@ export default function Footer() {
         >
           {["Instagram", "Facebook", "Twitter"].map((social) => (
             <a
-            
               key={social}
               href="#"
               data-cursor-hover
@@ -40,7 +43,8 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/5 text-xs text-text-muted">
-        © {new Date().getFullYear()} Ember & Oak. Built with Next.js, TypeScript, Tailwind & Framer Motion.
+        © {new Date().getFullYear()} Ember & Oak. Built with Next.js,
+        TypeScript, Tailwind & Framer Motion.
       </div>
     </footer>
   );
