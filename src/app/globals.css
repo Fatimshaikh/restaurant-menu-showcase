@@ -8,6 +8,9 @@
   --color-accent: #4ecdc4;
   --color-text-main: #f5f5f5;
   --color-text-muted: #a3a3a3;
+
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-inter);
 }
 
 body {
