@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import MagneticButton from "@/components/MagneticButton";
 
 const headline = "Ember & Oak";
 const subheadline = "Modern fire cuisine, rooted in tradition.";
@@ -48,16 +49,18 @@ export default function Hero() {
         {subheadline}
       </motion.p>
 
-      <motion.a
-        href="#menu"
-        data-cursor-hover
-        className="mt-12 px-8 py-3 rounded-full border border-primary text-primary font-body tracking-wide hover:bg-primary hover:text-bg transition-colors duration-300"
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.6 }}
       >
-        View Menu
-      </motion.a>
+        <MagneticButton
+          href="#menu"
+          className="mt-12 inline-block px-8 py-3 rounded-full border border-primary text-primary font-body tracking-wide hover:bg-primary hover:text-bg transition-colors duration-300"
+        >
+          View Menu
+        </MagneticButton>
+      </motion.div>
 
       <motion.div
         className="absolute bottom-10 flex flex-col items-center gap-2"
