@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔥 Ember & Oak — Restaurant Menu Showcase
 
-## Getting Started
+A modern, single-page restaurant menu website built as a design showcase, focused on a **micro-interaction heavy UI** — every element responds to the user with motion, giving the site a premium, tactile feel.
 
-First, run the development server:
+**[Live Demo](#)** · **[Repo](https://github.com/Fatimshaikh/restaurant-menu-showcase)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+- **Custom animated cursor** — a dual-layer cursor (dot + lagging ring) that grows and reacts when hovering over interactive elements
+- **Staggered text reveal** — the hero headline animates in word-by-word with a spring effect
+- **Magnetic buttons** — buttons subtly pull toward the cursor on hover, then spring back
+- **Scroll-aware navbar** — transparent over the hero, transitions to a blurred dark bar on scroll
+- **Hover-reveal menu cards** — dish images zoom and descriptions slide up on hover
+- **Scroll-triggered animations** — sections fade and rise into view as the user scrolls
+- **Fully responsive** — works across desktop, tablet, and mobile breakpoints
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [Next.js 15](https://nextjs.org/) (App Router) |
+| Language | [TypeScript](https://www.typescriptlang.org/) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com/) |
+| Animation | [Framer Motion](https://www.framer.com/motion/) |
+| Fonts | Playfair Display (headings) · Inter (body) — via `next/font` |
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx       # Root layout, fonts, custom cursor mount
+│   ├── page.tsx         # Homepage composition
+│   └── globals.css      # Tailwind v4 theme tokens
+├── components/
+│   ├── CustomCursor.tsx     # Dual-layer animated cursor
+│   ├── Navbar.tsx           # Scroll-aware sticky navbar
+│   ├── Hero.tsx              # Animated hero section
+│   ├── MagneticButton.tsx    # Reusable magnetic-hover button
+│   ├── MenuGrid.tsx           # Dish cards with hover reveal
+│   └── Footer.tsx             # Site footer
+└── data/
+    └── menu.ts           # Dish data (name, price, image, category)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/Fatimshaikh/restaurant-menu-showcase.git
+cd restaurant-menu-showcase
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 🎯 Purpose
 
-To learn more about Next.js, take a look at the following resources:
+This project was built as a portfolio piece to demonstrate proficiency in **Next.js, TypeScript, and Framer Motion**, with an emphasis on interaction design — the kind of polish expected in modern, high-end web experiences.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT — free to use as a learning reference.
