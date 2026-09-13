@@ -26,6 +26,7 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           {["Instagram", "Facebook", "Twitter"].map((social) => (
+            <a
             
               key={social}
               href="#"

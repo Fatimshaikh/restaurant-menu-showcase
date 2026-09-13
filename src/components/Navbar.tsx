@@ -27,6 +27,7 @@ export default function Navbar() {
         {["Menu", "About", "Reservations", "Contact"].map((item) => (
           
             key={item}
+            <a
             href={item === "Menu" ? "#menu" : "#"}
             data-cursor-hover
             className="relative group"
